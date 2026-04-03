@@ -32,7 +32,7 @@ typedef struct {
 } Bin;
 
 Bin bins[MAX_BINS];
-//Return Waste Type Module
+//Return Waste Type
 const char* getWasteTypeString(int type) {
     switch(type) {
         case DRY: return "DRY";
