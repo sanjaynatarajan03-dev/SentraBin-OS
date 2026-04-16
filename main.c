@@ -43,6 +43,18 @@ typedef struct {
 
 Bin bins[MAX_BINS];
 
+typedef struct {
+    int vehicle_id;
+    int vehicle_type;   // V_TYPE constant
+    float max_capacity; // Max capacity in litres
+    float fuel_capacity; // fuel capacity in litres
+    float mileage; // average kms/litre
+    float current_fuel; // litres
+    int assigned_zone; // 0 = unassigned
+    int availability; //
+
+} Vehicle;
+Vehicle vehicles[MAX_VEHICLES];
 // ══════════════════════════════════════════════════════════════════════════════
 //  HELPERS
 // ══════════════════════════════════════════════════════════════════════════════
@@ -366,6 +378,9 @@ int identifyCriticalBins() {
     return criticalCount;
 }
 
+void createVehicle() {
+    int
+}
 // ══════════════════════════════════════════════════════════════════════════════
 //  MAIN
 // ══════════════════════════════════════════════════════════════════════════════
